@@ -84,13 +84,11 @@ public class fileedit {
 
             fw.close();
 
-            JOptionPane.showMessageDialog(f,
-                    "File saved successfully!");
+            JOptionPane.showMessageDialog(f, "File saved successfully!");
 
         } catch (IOException e) {
 
-            JOptionPane.showMessageDialog(f,
-                    "Error while saving file!");
+            JOptionPane.showMessageDialog(f,  "Error while saving file!");
         }
     }
 
@@ -100,8 +98,7 @@ public class fileedit {
 
         try {
 
-            BufferedReader br =
-                    new BufferedReader(new FileReader(fname));
+            BufferedReader br = new BufferedReader(new FileReader(fname));
 
             String line;
 
@@ -114,8 +111,7 @@ public class fileedit {
 
         } catch (IOException e) {
 
-            JOptionPane.showMessageDialog(f,
-                    "Error while opening file!");
+            JOptionPane.showMessageDialog(f, "Error while opening file!");
         }
 
         return data;
